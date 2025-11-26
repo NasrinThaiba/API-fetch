@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <script src="index.js" defer></script>
     <title>Weather-API</title>
 </head>
 <body>
-    <div>
+    <div class = container>
+        <div id="input-data">
         <input type="text" id="city-name" placeholder="Enter city name">
         <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <div id = 'loading'>
+            <p>Please wait! Loading weather Data...</p>
+        </div>
+
         <div id="weather"></div>
+
+        <div id="forecast-button-container" style="text-align:center; margin-top:10px; display:none;">
+        <button id="show-forecast-btn">Show 7-Day Forecast</button>
+        </div>
+
+        <div id="week-report"></div>
     </div>    
 </body>
 </html>
